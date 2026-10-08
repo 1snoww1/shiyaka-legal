@@ -10,7 +10,7 @@
 <main>
 <p class="eyebrow">Shiyaka</p>
 <h1>Privacy policy</h1>
-<p class="meta">Version 2026-10-08 · Draft for the TestFlight beta. This text has not had a lawyer's review.</p>
+<p class="meta">Version 2026-10-08.2 · Draft for the TestFlight beta. This text has not had a lawyer's review.</p>
 
 <p>Shiyaka is an iPhone app for keeping a wardrobe, building looks, planning what to wear and sharing looks with friends. This page explains what the app stores about you and why. It is written from what the app actually does, not from a template.</p>
 
@@ -20,7 +20,8 @@
 <li><strong>Your wardrobe.</strong> Photos of your clothes, profile photo, looks, plans, wear history, collections and trips. These are private to you unless you choose to share a look.</li>
 <li><strong>Things you share.</strong> Posts, questions, stories, comments and votes you publish to friends you have accepted.</li>
 <li><strong>Classified listings.</strong> If you publish a listing, its photos, description, price and the phone number you give. The phone number is shown to another signed-in person only when they deliberately reveal it. We record that a reveal happened (who, which listing, when) to limit abuse, and tell the seller only how many reveals there were.</li>
-<li><strong>Payments.</strong> A listing fee is paid through Apple in-app purchase. We receive Apple's verified transaction record (transaction ID, product, dates). We never see your card details.</li>
+<li><strong>Payments.</strong> A listing fee is paid through Apple in-app purchase. We receive Apple's verified transaction record (transaction ID, product, dates). We never see your card details. These payment records are the one thing that is kept after you delete your account; see "Keeping and deleting it" below.</li>
+<li><strong>Sign in with Apple.</strong> If you sign in with Apple, we keep a token Apple gives us at sign-in. It is used only to tell Apple to end the connection when you delete your account, and it is deleted at that moment.</li>
 <li><strong>Notifications.</strong> If you turn on push notifications, a device token for your phone.</li>
 <li><strong>Support messages.</strong> What you write in Help and feedback. If you tick "Attach basic app information" we add the app version, platform and mode, and nothing else.</li>
 </ul>
@@ -39,13 +40,14 @@
 <ul>
 <li><strong>Supabase</strong> hosts the database, file storage and sign-in.</li>
 <li><strong>Apple</strong> provides Sign in with Apple and in-app purchase. <strong>Google</strong> provides Sign in with Google if you choose it.</li>
-<li><strong>Open-Meteo</strong> receives only the coordinates of the city you pick, to return the weather.</li>
+<li><strong>MET Norway</strong> (the Norwegian Meteorological Institute) provides the weather. Our server asks for it, not your phone, and the request contains only the fixed coordinates of the city you picked, never your location, your device or your account. Weather data: MET Norway, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
 <li>If cloud photo cutouts are ever switched on, a photo you choose to scan is sent to Photoroom for background removal, and only after you give separate consent.</li>
 </ul>
 <p>We do not sell your data.</p>
 
 <h2>Keeping and deleting it</h2>
-<p>You can export your data and delete your account from Settings. Deleting removes your wardrobe, photos, plans, profile and sign-in. Anonymised records of listing-fee payments (Apple transaction ID, product and dates) are kept for financial and legal obligations for a fixed retention period; they are no longer linked to you.</p>
+<p>You can export your data and delete your account from Settings. Deleting removes your wardrobe, photos, plans, profile, listings, phone number and sign-in. If you signed in with Apple, we also tell Apple to end the connection.</p>
+<p><strong>Payment records survive account deletion.</strong> When you delete your account, the record of any listing fee you paid is not deleted. It is kept without your name, email or any link to your account, and holds only Apple's transaction ID, the product, the environment and the purchase and check dates. We keep it because we have financial and legal obligations to keep payment records. It is kept for the period the law requires and then deleted; we will state that period here once it is confirmed. A deleted account cannot be reconnected to these records.</p>
 
 <h2>Children</h2>
 <p>Shiyaka is for people aged 12 and over. If you believe a younger person has an account, tell us through Help and feedback and we will remove it.</p>
