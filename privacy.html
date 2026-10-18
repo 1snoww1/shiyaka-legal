@@ -10,7 +10,7 @@
 <main>
 <p class="eyebrow">Shiyaka</p>
 <h1>Privacy policy</h1>
-<p class="meta">Version 2026-10-17.1 · 17 October 2026. This text has not yet had a lawyer's review.</p>
+<p class="meta">Version 2026-10-18.1 · 18 October 2026. This text has not yet had a lawyer's review.</p>
 
 <p>Shiyaka is an iPhone app for keeping a wardrobe, building looks, planning what to wear, sharing looks with friends and placing classified listings. This page explains what the app stores about you, why, where, and for how long. It is written from what the app actually does, not from a template.</p>
 
@@ -59,7 +59,7 @@
 <li><strong>MET Norway</strong> (the Norwegian Meteorological Institute) provides the weather. Our server asks for it, not your phone, and the request contains only the coordinates of your chosen place rounded to about 1 km, never your precise location, your device or your account. Weather data: MET Norway, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
 <li><strong>OpenStreetMap Nominatim</strong> answers city searches. Our server sends it only the city name you typed, never your location, device or account. Search data © OpenStreetMap contributors (<a href="https://www.openstreetmap.org/copyright">ODbL</a>).</li>
 <li><strong>Accurate clothing recognition</strong> (off unless you allow it, on the scan screen or under Settings → Sharing &amp; data): for each scan, the photo and the cut-out piece are sent through our server to OpenAI, which names the piece and its colour. The photo is used only to answer, is not stored by Shiyaka, and is sent with OpenAI's no-storage setting; OpenAI does not use API data to train its models. We keep only a count of how many pieces you had named that day, for two days, to limit costs.</li>
-<li><strong>Cleaner cutouts</strong> (part of the same permission): when nobody is wearing the piece, the photo is also sent through our server to Replicate, which runs an open-source cutout model and returns the piece's outline. Replicate deletes the photo and the outline within an hour; Shiyaka does not store them. We keep only a count of these cutouts per day, for two days, to limit costs.</li>
+<li><strong>Cleaner cutouts</strong> (part of the same permission): the photo is also sent through our server to Replicate, which runs a cutout model and returns the piece's outline. When someone is wearing the piece, this happens only after you tap the piece you want, and the spot you tapped is sent with the photo. Replicate deletes the photo and the outline within an hour; Shiyaka does not store them. We keep only a count of these cutouts per day, for two days, to limit costs.</li>
 <li>If cloud photo cutouts are ever switched on, a photo you choose to scan is sent to Photoroom for background removal, and only after you give separate consent.</li>
 </ul>
 
