@@ -10,7 +10,7 @@
 <main>
 <p class="eyebrow">Shiyaka</p>
 <h1>Privacy policy</h1>
-<p class="meta">Version 2026-10-18.1 · 18 October 2026. This text has not yet had a lawyer's review.</p>
+<p class="meta">Version 2026-10-21.1 · 21 October 2026. This text has not yet had a lawyer's review.</p>
 
 <p>Shiyaka is an iPhone app for keeping a wardrobe, building looks, planning what to wear, sharing looks with friends and placing classified listings. This page explains what the app stores about you, why, where, and for how long. It is written from what the app actually does, not from a template.</p>
 
@@ -24,6 +24,7 @@
 <li><strong>Things you share.</strong> Posts, questions, stories, comments and votes you publish to friends you have accepted.</li>
 <li><strong>Classified listings.</strong> If you publish a listing, its photos, description, price and the phone number you give. The phone number is shown to another signed-in person only when they deliberately reveal it. We record that a reveal happened (who, which listing, when) to limit abuse, and tell the seller only how many reveals there were.</li>
 <li><strong>Payments.</strong> The listing fee is paid through Apple in-app purchase. We receive Apple's verified transaction record (transaction ID, product, dates). We never see your card details.</li>
+<li><strong>Shopify shops (businesses).</strong> If a business connects its Shopify shop, we receive through Shopify's Admin API, with the owner's approval: the shop's name and web address, the shop owner's e-mail address, and for each active product its title, description, vendor, type, price, photos, stock status and web address. We use them to create and run the business's Shiyaka account and to show its products to Shiyaka members. A member who saves a product's photo to their closet keeps a copy in their own private closet. We do not read orders, customers or payment information, and we hold no customer records. We keep the access token Shopify gives us (it can only read products) in a private store that no phone or other member can read. If a business disconnects its shop, or uninstalls Shiyaka in Shopify, we delete the token and the imported products. Shopify's customer-data requests and erasure notices are answered automatically.</li>
 <li><strong>Sign in with Apple.</strong> If you sign in with Apple, we keep a token Apple gives us at sign-in. It is used only to tell Apple to end the connection when you delete your account, and it is deleted at that moment.</li>
 <li><strong>Notifications.</strong> If you turn on push notifications, a device token for your phone.</li>
 <li><strong>Reports.</strong> When you report a post, person or listing: what you reported, the reason you chose and anything you wrote.</li>
@@ -55,6 +56,7 @@
 <ul>
 <li><strong>Supabase</strong> hosts the database, file storage and sign-in.</li>
 <li><strong>Sentry</strong> receives crash reports and, if you turned them on, usage counts.</li>
+<li><strong>Shopify</strong> provides the connection to a business's shop and sign-in with Shopify. We only receive what the business approves on Shopify's own page.</li>
 <li><strong>Apple</strong> provides Sign in with Apple, push notifications and in-app purchase. <strong>Google</strong> provides Sign in with Google if you choose it.</li>
 <li><strong>MET Norway</strong> (the Norwegian Meteorological Institute) provides the weather. Our server asks for it, not your phone, and the request contains only the coordinates of your chosen place rounded to about 1 km, never your precise location, your device or your account. Weather data: MET Norway, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
 <li><strong>OpenStreetMap Nominatim</strong> answers city searches. Our server sends it only the city name you typed, never your location, device or account. Search data © OpenStreetMap contributors (<a href="https://www.openstreetmap.org/copyright">ODbL</a>).</li>
