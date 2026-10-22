@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Add to your Shiyaka closet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="eyebrow">Shiyaka</p>
+<h1>Add this piece to your closet</h1>
+<p id="lead">Opening Shiyaka on your iPhone…</p>
+<p><a id="open" class="button" href="#">Open in Shiyaka</a></p>
+<p id="missing" hidden>If Shiyaka didn’t open, you may not have it yet. It is on TestFlight for now and coming to the App Store. Install it, then come back to this page and tap the button above.</p>
+<p id="bad" hidden>This link isn’t complete. Go back to the shop’s page and tap the button again.</p>
+<p class="nav"><a href="index.html">About Shiyaka</a> · <a href="privacy.html">Privacy policy</a></p>
+</main>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var shop = (q.get("shop") || "").toLowerCase();
+  var product = q.get("product") || "";
+  var ok = /^[a-z0-9][a-z0-9-]{0,60}\.myshopify\.com$/.test(shop) && /^\d{1,20}$/.test(product);
+  if (!ok) {
+    document.getElementById("lead").hidden = true;
+    document.getElementById("open").hidden = true;
+    document.getElementById("bad").hidden = false;
+    return;
+  }
+  var target = "shiyaka://add?shop=" + encodeURIComponent(shop) + "&product=" + encodeURIComponent(product);
+  var open = document.getElementById("open");
+  open.href = target;
+  // On a phone with Shiyaka this opens the app straight away; otherwise the explanation below stays visible.
+  setTimeout(function () { window.location.href = target; }, 300);
+  setTimeout(function () { document.getElementById("lead").textContent = "Tap the button to open Shiyaka."; document.getElementById("missing").hidden = false; }, 2000);
+})();
+</script>
+</body>
+</html>
