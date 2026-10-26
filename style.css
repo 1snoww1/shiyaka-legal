@@ -13,4 +13,10 @@ dt { font-weight: 600; margin-top: 16px; }
 dd { margin: 4px 0 0; color: var(--muted); }
 a { color: var(--accent); }
 .nav { margin-top: 40px; color: var(--muted); }
+.card { border: 1px solid color-mix(in srgb, var(--muted) 35%, transparent); border-radius: 16px; padding: 16px 20px; margin: 20px 0; }
+.card p { margin: 4px 0; }
+.shop-name { font: 400 24px/1.25 Georgia, "Lora", serif; }
+.get-app { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; margin: 16px 0; }
+.get-app svg { flex: none; border-radius: 12px; }
+.get-app div { flex: 1 1 220px; }
 .button { display: inline-block; padding: 12px 22px; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; letter-spacing: .04em; }
