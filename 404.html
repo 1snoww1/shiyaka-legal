@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Shyaka</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/favicon.png">
+</head>
+<body>
+<main>
+<a class="brand" href="https://shyaka.art/"><img src="/logo.png" width="44" height="44" alt=""><span>Shyaka</span></a>
+<!-- Profile links (29 October 2026): shyaka.art/@salma has no page of its own, so GitHub Pages serves this one,
+     which opens shiyaka://u/salma in the app. Only the username is read; nothing about the account is shown here. -->
+<div id="profile" hidden>
+<h1 id="handle"></h1>
+<p id="lead">Opening Shyaka on your iPhone…</p>
+<p><a id="open" class="button" href="#">Open in Shyaka</a></p>
+<p id="missing" hidden>If Shyaka didn’t open, you may not have it yet. It is on TestFlight for now and coming to the App Store. Install it, then come back to this page and tap the button above.</p>
+</div>
+<div id="lost">
+<h1>Page not found</h1>
+<p>There’s nothing at this address.</p>
+</div>
+<p class="nav"><a href="/index.html">About Shyaka</a> · <a href="/privacy.html">Privacy policy</a></p>
+</main>
+<script>
+(function () {
+  var match = /^\/@([A-Za-z][A-Za-z0-9_]{2,29})\/?$/.exec(location.pathname);
+  if (!match) return;
+  var name = match[1].toLowerCase();
+  document.title = "@" + name + " on Shyaka";
+  document.getElementById("lost").hidden = true;
+  document.getElementById("profile").hidden = false;
+  document.getElementById("handle").textContent = "Follow @" + name + " on Shyaka";
+  var target = "shiyaka://u/" + name;
+  document.getElementById("open").href = target;
+  // On a phone with Shyaka this opens the app straight away; otherwise the explanation below stays visible.
+  setTimeout(function () { window.location.href = target; }, 300);
+  setTimeout(function () { document.getElementById("lead").textContent = "Tap the button to open Shyaka."; document.getElementById("missing").hidden = false; }, 2000);
+})();
+</script>
+</body>
+</html>
