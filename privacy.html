@@ -13,7 +13,7 @@
 <a class="brand" href="https://shyaka.art/"><img src="wordmark.svg" width="150" height="33" alt="Shyaka"></a>
 <h1>Privacy policy</h1>
 <p class="draft">Draft, not yet reviewed by a lawyer.</p>
-<p class="meta">Version 2026-10-29.1 · 29 October 2026.</p>
+<p class="meta">Version 2026-11-08.1 · 8 November 2026.</p>
 
 <p>Shyaka is an iPhone app for keeping a wardrobe, building looks, planning what to wear, following other people, shopping pieces from local shops and, when they are switched on, placing personal listings. This page explains what the app stores about you, why, where, and for how long. It is written from what the app actually does, not from a template.</p>
 
@@ -36,7 +36,7 @@
 <li><strong>Reports.</strong> When you report a post, person or listing: what you reported, the reason you chose and anything you wrote.</li>
 <li><strong>Support messages.</strong> What you write in Help and feedback. If you tick "Attach basic app information" we add the app version, platform and mode, and nothing else.</li>
 <li><strong>Crash reports</strong> (on unless you turn them off). When something in the app breaks, an error report is sent to our error-reporting service, Sentry: the error, the screen it happened on, the app version, the phone model and iOS version. Before a report leaves your phone the app removes your account, your device name and any e-mail address or phone number in the error text. You can turn crash reports off under Settings → Sharing &amp; data.</li>
-<li><strong>Usage counts</strong> (off unless you turn them on). Counts of which features are used and how long a scan takes and whether it worked, also sent to Sentry. They never include your clothes, photos, name, e-mail, phone number, messages or location. Turn them on or off under Settings → Sharing &amp; data.</li>
+<li><strong>Usage counts</strong> (off unless you turn them on). Counts of which features are used and how long a scan takes and whether it worked, also sent to Sentry. They never include your clothes, photos, name, e-mail, phone number, messages or location. With this switch on, ten named moments (opening the app, the first screen, shuffle, wear, saved look, Market opens, Buy taps, pieces added and studio pictures) are also kept on Shyaka's own server against your account for 13 months. Turn them on or off under Settings → Sharing &amp; data.</li>
 <li><strong>Scan log</strong> (Settings → Sharing &amp; data → Help improve the scanner, on unless you turn it off; turning it off stops it and deletes anything not yet sent). For each photo you scan while signed in: which scanning method ran, how long each step took, the type of phone (low, mid or high end), how many pieces were found, how sure the scanner was, and whether you kept, changed or discarded the result. No photo, no text you typed and no name. Each record carries a scrambled code made from your account instead of your account itself, so we can count scans per person without knowing who; the records are deleted with your account.</li>
 </ul>
 
@@ -62,6 +62,8 @@
 <ul>
 <li><strong>Supabase</strong> hosts the database, file storage and sign-in.</li>
 <li><strong>Sentry</strong> receives crash reports and, if you turned them on, usage counts.</li>
+<li><strong>Expo</strong> (Expo / 650 Industries, Inc., United States) delivers push notifications and the app's update checks. It receives the push token, a random per-install code and the phone's internet address.</li>
+<li><strong>Resend</strong> (Resend, Inc.) sends sign-in emails. It receives the email address and the message, and processes them in its Ireland region.</li>
 <li><strong>Modal</strong> (Modal Labs, Inc., United States) runs Shyaka's own picture software for studio pictures. Studio pictures are paused, so it receives nothing from Shyaka at the moment.</li>
 <li><strong>Shopify</strong> provides the connection to a business's shop and sign-in with Shopify. We only receive what the business approves on Shopify's own page.</li>
 <li><strong>WooCommerce</strong> (the store software on a business's own WordPress site) provides the connection to that store. We only receive what the business approves on WooCommerce's own page and what the Shyaka plugin sends from its store.</li>
