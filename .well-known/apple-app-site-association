@@ -1,0 +1,42 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "PS3RAGCXY3.com.shiyaka.app"
+        ],
+        "components": [
+          {
+            "/": "/@*",
+            "comment": "Profile links: shyaka.art/@salma opens the profile in the app"
+          },
+          {
+            "/": "/u/*",
+            "comment": "The same profile links in the app's own form"
+          },
+          {
+            "/": "/add",
+            "comment": "Add to my closet from a shop's product page"
+          },
+          {
+            "/": "/add.html",
+            "comment": "The website's Add to my closet page"
+          },
+          {
+            "/": "/shopify/*",
+            "comment": "Shop linking codes (Shopify and WooCommerce)"
+          },
+          {
+            "/": "/auth/*",
+            "comment": "Sign-in links coming back to the app"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "PS3RAGCXY3.com.shiyaka.app"
+    ]
+  }
+}

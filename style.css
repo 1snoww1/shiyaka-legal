@@ -46,6 +46,10 @@ main > [dir="rtl"] { margin-top: 48px; padding-top: 32px; border-top: 1px solid 
 [dir="rtl"] ul, [dir="rtl"] ol { padding: 0 20px 0 0; }
 [dir="rtl"] th, [dir="rtl"] td { text-align: right; }
 
-/* The App Store badge on the home page: its markup waits in an HTML comment until the App Store link exists. */
+/* Release-day switch (docs/RELEASE_DAY.md, 14 November 2026). While <body class="prelaunch">, everything marked
+   .store-only (the App Store badge and links) stays hidden and .testflight-only wording shows; on release day the
+   class comes off the three pages (index, 404, add) and the App Store wording takes over. */
+.prelaunch .store-only { display: none !important; }
+body:not(.prelaunch) .testflight-only { display: none !important; }
 .badge { display: inline-block; text-decoration: none; }
 .badge img { display: block; }
