@@ -38,3 +38,14 @@ th { font-weight: 700; }
 pre, code { white-space: pre-wrap; overflow-wrap: anywhere; }
 
 @media (max-width: 480px) { h1 { font-size: 32px; } }
+
+/* For shops (shops.html, 8 November 2026). The Arabic half sits under a rule and reads right to left: bullets and table
+   text move to the right, and the letter spacing made for Latin small caps is switched off. */
+main > [dir="rtl"] { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] .eyebrow { letter-spacing: 0; }
+[dir="rtl"] ul, [dir="rtl"] ol { padding: 0 20px 0 0; }
+[dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+
+/* The App Store badge on the home page: its markup waits in an HTML comment until the App Store link exists. */
+.badge { display: inline-block; text-decoration: none; }
+.badge img { display: block; }
