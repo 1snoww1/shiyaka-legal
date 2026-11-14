@@ -10,15 +10,18 @@
 <link rel="apple-touch-icon" href="logo.png">
 </head>
 <body class="prelaunch">
-<main>
+<header class="site-header"><div class="bar">
 <a class="brand" href="https://shyaka.art/"><img src="wordmark.svg" width="150" height="33" alt="Shyaka"></a>
+<nav class="site-nav" aria-label="Main"><a href="shops.html">For shops</a><a href="support.html">Support</a></nav>
+</div></header>
+<main>
 <h1>Add this piece to your closet</h1>
 <p id="lead">Opening Shyaka on your iPhone…</p>
 <p><a id="open" class="button" href="#">Open in Shyaka</a></p>
 <p id="missing" hidden>If Shyaka didn’t open, you may not have it yet. <span class="testflight-only">It is on TestFlight for now and coming to the App Store. Install it, then come back to this page and tap the button above.</span><span class="store-only">Get it from the <a href="https://apps.apple.com/app/id6819894024">App Store</a>, then come back to this page and tap the button above.</span></p>
 <p id="bad" hidden>This link isn’t complete. Go back to the shop’s page and tap the button again.</p>
-<p class="nav"><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> · <a href="support.html">Support</a> · <a href="credits.html">Credits</a></p>
 </main>
+<footer class="site-footer"><div class="foot"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="credits.html">Credits</a></div></footer>
 <script>
 (function () {
   var q = new URLSearchParams(location.search);

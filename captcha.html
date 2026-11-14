@@ -13,15 +13,18 @@
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
 </head>
 <body>
-<main>
+<header class="site-header"><div class="bar">
 <a class="brand" href="https://shyaka.art/"><img src="wordmark.svg" width="150" height="33" alt="Shyaka"></a>
+<nav class="site-nav" aria-label="Main"><a href="shops.html">For shops</a><a href="support.html">Support</a></nav>
+</div></header>
+<main>
 <h1 id="title">A quick check</h1>
 <p id="lead">This takes a moment and keeps bots out of Shyaka.</p>
 <div id="widget"></div>
 <p id="done" hidden>Done. Going back to Shyaka…</p>
 <p id="bad" hidden>This page needs to be opened from the Shyaka app.</p>
-<p class="nav"><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> · <a href="support.html">Support</a> · <a href="credits.html">Credits</a></p>
 </main>
+<footer class="site-footer"><div class="foot"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="credits.html">Credits</a></div></footer>
 <script>
 (function () {
   var q = new URLSearchParams(location.search);

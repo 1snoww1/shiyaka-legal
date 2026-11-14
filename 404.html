@@ -10,8 +10,11 @@
 <link rel="apple-touch-icon" href="/logo.png">
 </head>
 <body class="prelaunch">
-<main>
+<header class="site-header"><div class="bar">
 <a class="brand" href="https://shyaka.art/"><img src="/wordmark.svg" width="150" height="33" alt="Shyaka"></a>
+<nav class="site-nav" aria-label="Main"><a href="/shops.html">For shops</a><a href="/support.html">Support</a></nav>
+</div></header>
+<main>
 <!-- Profile links (29 October 2026): shyaka.art/@salma has no page of its own, so GitHub Pages serves this one,
      which opens shiyaka://u/salma in the app. Only the username is read; nothing about the account is shown here. -->
 <div id="profile" hidden>
@@ -24,8 +27,8 @@
 <h1>Page not found</h1>
 <p>There’s nothing at this address.</p>
 </div>
-<p class="nav"><a href="/index.html">About Shyaka</a> · <a href="/privacy.html">Privacy policy</a> · <a href="/terms.html">Terms of use</a> · <a href="/support.html">Support</a> · <a href="/credits.html">Credits</a></p>
 </main>
+<footer class="site-footer"><div class="foot"><a href="/privacy.html">Privacy policy</a><a href="/terms.html">Terms of use</a><a href="/credits.html">Credits</a></div></footer>
 <script>
 (function () {
   var match = /^\/@([A-Za-z][A-Za-z0-9_]{2,29})\/?$/.exec(location.pathname);

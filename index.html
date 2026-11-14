@@ -9,16 +9,30 @@
 <link rel="apple-touch-icon" href="logo.png">
 </head>
 <body class="prelaunch">
-<main>
+<header class="site-header"><div class="bar">
 <a class="brand" href="https://shyaka.art/"><img src="wordmark.svg" width="150" height="33" alt="Shyaka"></a>
+<nav class="site-nav" aria-label="Main"><a href="shops.html">For shops</a><a href="support.html">Support</a></nav>
+</div></header>
+<main class="home">
+<section class="hero">
+<img class="app-icon" src="logo.png" width="76" height="76" alt="">
 <h1>Made for rewearing.</h1>
-<p>A wardrobe and outfit-planning app for your iPhone. Keep your closet, build looks, plan what to wear, and find pieces from local shops that finish the look. Buying always happens on the shop's own site.</p>
+<p class="lead">A wardrobe and outfit-planning app for your iPhone.</p>
+<div class="hero-rule"></div>
 <!-- App Store badge (release-day switch, docs/RELEASE_DAY.md). Hidden while <body class="prelaunch">; on release day
      remove that class from <body> on this page, 404.html and add.html, and save Apple's black "Download on the App Store"
      badge (SVG, English, from https://developer.apple.com/app-store/marketing/guidelines/) as app-store-badge.svg next
      to this file. The link already points at the real App Store id. -->
 <p class="store-only"><a class="badge" href="https://apps.apple.com/app/id6819894024"><img src="app-store-badge.svg" width="162" height="54" alt="Download on the App Store"></a></p>
-<p class="nav"><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a> · <a href="support.html">Support</a> · <a href="credits.html">Credits</a> · <a href="shops.html">For shops</a></p>
+</section>
+<ul class="features">
+<li><span class="num">1</span><strong>Keep your closet</strong></li>
+<li><span class="num">2</span><strong>Build looks</strong></li>
+<li><span class="num">3</span><strong>Plan what to wear</strong></li>
+<li><span class="num">4</span><strong>Find pieces from local shops that finish the look</strong></li>
+</ul>
+<p class="note">Buying always happens on the shop's own site.</p>
 </main>
+<footer class="site-footer"><div class="foot"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="credits.html">Credits</a></div></footer>
 </body>
 </html>
