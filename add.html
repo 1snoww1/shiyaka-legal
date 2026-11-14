@@ -2,26 +2,60 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
+<!-- site:head -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Add to your Shyaka closet</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.png">
-<link rel="apple-touch-icon" href="logo.png">
+<meta name="description" content="A wardrobe and outfit-planning app for your iPhone. Keep your closet, build looks, plan what to wear, and find pieces from local shops that finish the look.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shyaka">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Add to your Shyaka closet">
+<meta property="og:description" content="A wardrobe and outfit-planning app for your iPhone. Keep your closet, build looks, plan what to wear, and find pieces from local shops that finish the look.">
+<meta property="og:image" content="https://shyaka.art/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Shyaka. Made for rewearing.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Add to your Shyaka closet">
+<meta name="twitter:description" content="A wardrobe and outfit-planning app for your iPhone. Keep your closet, build looks, plan what to wear, and find pieces from local shops that finish the look.">
+<meta name="twitter:image" content="https://shyaka.art/og-image.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<script>document.documentElement.className+=" js"</script>
+<link rel="stylesheet" href="style.css?v=3a4cd510">
+<script src="site.js?v=7aee2462" defer></script>
+<!-- /site:head -->
 </head>
 <body class="prelaunch">
+<!-- site:header -->
+<a class="skip" href="#content">Skip to content</a>
 <header class="site-header"><div class="bar">
 <a class="brand" href="https://shyaka.art/"><img src="wordmark.svg" width="150" height="33" alt="Shyaka"></a>
-<nav class="site-nav" aria-label="Main"><a href="shops.html">For shops</a><a href="support.html">Support</a></nav>
+<nav class="site-nav" aria-label="Main"><a href="shops.html">For shops</a><a href="support.html">Support</a><a class="lang" href="index-ar.html" hreflang="ar" lang="ar">العربية</a></nav>
 </div></header>
-<main>
+<!-- /site:header -->
+<main id="content">
+<div class="link-card">
+<img class="app-icon" src="logo.png" width="56" height="56" alt="">
 <h1>Add this piece to your closet</h1>
 <p id="lead">Opening Shyaka on your iPhone…</p>
 <p><a id="open" class="button" href="#">Open in Shyaka</a></p>
 <p id="missing" hidden>If Shyaka didn’t open, you may not have it yet. <span class="testflight-only">It is on TestFlight for now and coming to the App Store. Install it, then come back to this page and tap the button above.</span><span class="store-only">Get it from the <a href="https://apps.apple.com/app/id6819894024">App Store</a>, then come back to this page and tap the button above.</span></p>
 <p id="bad" hidden>This link isn’t complete. Go back to the shop’s page and tap the button again.</p>
+<p class="about-line">Shyaka is a wardrobe and outfit-planning app for your iPhone. <a href="index.html">About Shyaka</a></p>
+</div>
 </main>
-<footer class="site-footer"><div class="foot"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="credits.html">Credits</a></div></footer>
+<!-- site:footer -->
+<footer class="site-footer"><div class="foot">
+<nav class="foot-col" aria-label="Shyaka"><p class="foot-h">Shyaka</p><a href="index.html">Home</a><a href="shops.html">For shops</a><a href="support.html">Support</a></nav>
+<nav class="foot-col" aria-label="Legal"><p class="foot-h">Legal</p><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="credits.html">Credits</a></nav>
+<p class="foot-end"><a class="lang" href="index-ar.html" hreflang="ar" lang="ar">العربية</a><a class="top" href="#content">Back to top</a></p>
+</div></footer>
+<!-- /site:footer -->
 <script>
 (function () {
   var q = new URLSearchParams(location.search);

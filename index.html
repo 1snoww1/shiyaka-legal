@@ -2,37 +2,87 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
+<!-- site:head -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shyaka</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.png">
-<link rel="apple-touch-icon" href="logo.png">
+<title>Shyaka: made for rewearing</title>
+<meta name="description" content="A wardrobe and outfit-planning app for your iPhone. Keep your closet, build looks, plan what to wear, and find pieces from local shops that finish the look.">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://shyaka.art/">
+<link rel="alternate" hreflang="en" href="https://shyaka.art/">
+<link rel="alternate" hreflang="ar" href="https://shyaka.art/index-ar.html">
+<link rel="alternate" hreflang="x-default" href="https://shyaka.art/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shyaka">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Shyaka: made for rewearing">
+<meta property="og:description" content="A wardrobe and outfit-planning app for your iPhone. Keep your closet, build looks, plan what to wear, and find pieces from local shops that finish the look.">
+<meta property="og:url" content="https://shyaka.art/">
+<meta property="og:image" content="https://shyaka.art/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Shyaka. Made for rewearing.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shyaka: made for rewearing">
+<meta name="twitter:description" content="A wardrobe and outfit-planning app for your iPhone. Keep your closet, build looks, plan what to wear, and find pieces from local shops that finish the look.">
+<meta name="twitter:image" content="https://shyaka.art/og-image.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<script>document.documentElement.className+=" js"</script>
+<link rel="stylesheet" href="style.css?v=3a4cd510">
+<script src="site.js?v=7aee2462" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Shyaka","url":"https://shyaka.art/","logo":"https://shyaka.art/logo.png","email":"support@shyaka.art"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Shyaka","url":"https://shyaka.art/","inLanguage":"en-GB"}</script>
+<!-- /site:head -->
 </head>
 <body class="prelaunch">
+<!-- site:header -->
+<a class="skip" href="#content">Skip to content</a>
 <header class="site-header"><div class="bar">
 <a class="brand" href="https://shyaka.art/"><img src="wordmark.svg" width="150" height="33" alt="Shyaka"></a>
-<nav class="site-nav" aria-label="Main"><a href="shops.html">For shops</a><a href="support.html">Support</a></nav>
+<nav class="site-nav" aria-label="Main"><a href="shops.html">For shops</a><a href="support.html">Support</a><a class="lang" href="index-ar.html" hreflang="ar" lang="ar">العربية</a></nav>
 </div></header>
-<main class="home">
+<!-- /site:header -->
+<main id="content" class="home">
 <section class="hero">
 <img class="app-icon" src="logo.png" width="76" height="76" alt="">
 <h1>Made for rewearing.</h1>
 <p class="lead">A wardrobe and outfit-planning app for your iPhone.</p>
 <div class="hero-rule"></div>
 <!-- App Store badge (release-day switch, docs/RELEASE_DAY.md). Hidden while <body class="prelaunch">; on release day
-     remove that class from <body> on this page, 404.html and add.html, and save Apple's black "Download on the App Store"
-     badge (SVG, English, from https://developer.apple.com/app-store/marketing/guidelines/) as app-store-badge.svg next
-     to this file. The link already points at the real App Store id. -->
+     remove that class from <body> on this page, index-ar.html, 404.html and add.html, then run node scripts/site-build.mjs.
+     The badge file app-store-badge.svg (Apple's black "Download on the App Store" badge, English) is already next to this
+     file, and the link already points at the real App Store id. While the class is there, the beta button shows instead. -->
 <p class="store-only"><a class="badge" href="https://apps.apple.com/app/id6819894024"><img src="app-store-badge.svg" width="162" height="54" alt="Download on the App Store"></a></p>
+<p class="cta testflight-only"><a class="button" href="https://testflight.apple.com/join/8vx1mxqZ">Join the beta on TestFlight</a><span class="meta">Opens TestFlight on your iPhone.</span></p>
+<div class="qr testflight-only"><img src="img/qr-beta.svg" width="112" height="112" alt="QR code that opens the beta on TestFlight"><p>Scan with your iPhone's camera to get Shyaka.</p></div>
+<div class="qr store-only"><img src="img/qr-store.svg" width="112" height="112" alt="QR code that opens Shyaka in the App Store"><p>Scan with your iPhone's camera to get Shyaka.</p></div>
+</section>
+<section class="shots" aria-label="Screenshots of the app">
+<ul class="shot-strip" tabindex="0">
+<li><img src="img/shot-en-1.webp" width="560" height="1217" loading="lazy" decoding="async" alt="Today's outfit, from your own closet. A fresh look every morning, made for the weather."></li>
+<li><img src="img/shot-en-2.webp" width="560" height="1217" loading="lazy" decoding="async" alt="Modest looks, done well. Pick an occasion and Shyaka styles it."></li>
+<li><img src="img/shot-en-3.webp" width="560" height="1217" loading="lazy" decoding="async" alt="Save the looks you love. Come back to them on any day."></li>
+<li><img src="img/shot-en-4.webp" width="560" height="1217" loading="lazy" decoding="async" alt="Plan your week in a minute. Looks on a calendar, trips included."></li>
+<li><img src="img/shot-en-5.webp" width="560" height="1217" loading="lazy" decoding="async" alt="Your whole closet, in your pocket. Every piece cut out and sorted."></li>
+<li><img src="img/shot-en-6.webp" width="560" height="1217" loading="lazy" decoding="async" alt="Your looks, your people. Post a look, follow friends, keep it private if you like."></li>
+</ul>
 </section>
 <ul class="features">
-<li><span class="num">1</span><strong>Keep your closet</strong></li>
-<li><span class="num">2</span><strong>Build looks</strong></li>
-<li><span class="num">3</span><strong>Plan what to wear</strong></li>
-<li><span class="num">4</span><strong>Find pieces from local shops that finish the look</strong></li>
+<li class="reveal"><span class="num">1</span><strong>Keep your closet</strong></li>
+<li class="reveal"><span class="num">2</span><strong>Build looks</strong></li>
+<li class="reveal"><span class="num">3</span><strong>Plan what to wear</strong></li>
+<li class="reveal"><span class="num">4</span><strong>Find pieces from local shops that finish the look</strong></li>
 </ul>
-<p class="note">Buying always happens on the shop's own site.</p>
+<p class="note reveal">Buying always happens on the shop's own site.</p>
 </main>
-<footer class="site-footer"><div class="foot"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="credits.html">Credits</a></div></footer>
+<!-- site:footer -->
+<footer class="site-footer"><div class="foot">
+<nav class="foot-col" aria-label="Shyaka"><p class="foot-h">Shyaka</p><a href="index.html">Home</a><a href="shops.html">For shops</a><a href="support.html">Support</a></nav>
+<nav class="foot-col" aria-label="Legal"><p class="foot-h">Legal</p><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="credits.html">Credits</a></nav>
+<p class="foot-end"><a class="lang" href="index-ar.html" hreflang="ar" lang="ar">العربية</a><a class="top" href="#content">Back to top</a></p>
+</div></footer>
+<!-- /site:footer -->
 </body>
 </html>
