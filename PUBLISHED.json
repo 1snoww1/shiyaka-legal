@@ -1,6 +1,6 @@
 {
   "note": "Written by scripts/publish-site.mjs in the app repository; what was published and from which app commit.",
-  "from": "6481b80",
+  "from": "693a0fb",
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     ".well-known/apple-app-site-association": "30b3fe33d764818397c2b0266b155d5bfcdf88c6a590502e9695b40c4efd8557",
@@ -34,7 +34,7 @@
     "logo.png": "3dfcb20030a5f05af35d56fdb0a7c67f60b0109ac5269d5c98dd5c650aa17ac7",
     "og-image-ar.png": "565c8e257f2e87006e3d247a52c63b2d9134e86e092876d03f51882c44bf9c9b",
     "og-image.png": "23da4e3802e3b9e9343f55a36df2e31fd6ae6b582c5721f18a5514648e4eae81",
-    "privacy.html": "027e0f1d3301410722cf1dde57db742005d089e2612f15a220279633191caf4e",
+    "privacy.html": "1c01febe70690718570e134f9c901468c554cf38d1f2f00975b62118e440e03c",
     "robots.txt": "3bc75600d0a2bc3bf39e5d7dcbc9affb4149d9c8d51379660475e625db146ad5",
     "shopify.html": "10209edbd38b3c1fec9b42941e8e57a9d7360d46fde69555056c234cb852cb92",
     "shops-ar.html": "eeaadbdfe5949b66c4238fd11cf43a7f0493fb4c072cfb651ade89626a2fe775",
